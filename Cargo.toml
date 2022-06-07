@@ -1,0 +1,20 @@
+[package]
+name = "tap-plugin-magic"
+version = "0.1.0"
+authors = ["sjacob <sjacob@git.lrp>"]
+edition = "2021"
+
+description = "File type detection and auto module launcher for the TAP project"
+readme      = "README.md"
+
+[dependencies]
+tap = { version="0.1.0", git="https://github.com/tap-ir/tap.git" }
+tap-query = { version="0.1.0", git="https://github.com/tap-ir/tap-query.git" }
+tree_magic_mini = { version="1.0.1", git="https://github.com/tap-ir/tree_magic_mini.git" }
+rayon = "1.5"
+
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+schemars = "0.8"
+log = { version = "0.4", features = ["std", "serde"] }
+anyhow = { version = "1.0.40"}
